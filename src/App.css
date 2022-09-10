@@ -1,38 +1,80 @@
+body {
+    background: #000 !important;
+}
+
 .App {
-  text-align: center;
+    margin-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+    list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    width: 30%;
+    padding: 12px 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #DFDFDF;
 }
 
-.App-link {
-  color: #61dafb;
+.gap {
+    margin-left: 10px;
+    padding: 6px 11px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.list-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.single-todo {
+    margin-top: 20px;
+}
+
+.align-list-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-innerhtml {
+    word-break: break-all;
+    width: 50%;
+}
+
+@media only screen and (max-width:800px) {  
+    input {
+        padding: 8px;
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+    input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .list-container {
+        width: 95%;
+        margin: 0px;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width:360px) {
+    .gap {
+        padding: 3px 8px !important;
+    }
 }
